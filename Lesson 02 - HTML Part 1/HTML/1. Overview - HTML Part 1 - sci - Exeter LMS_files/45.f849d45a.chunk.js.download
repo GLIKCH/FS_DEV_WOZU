@@ -1,0 +1,2 @@
+(this["webpackJsonpCC.LMS.WebUI"]=this["webpackJsonpCC.LMS.WebUI"]||[]).push([[45],{3081:function(e,n,t){"use strict";t.r(n);var i=t(11);n.default=function(){return Object(i.jsx)("div",{style:{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",paddingTop:200,paddingLeft:20,paddingRight:20,whiteSpace:"nowrap"},children:Object(i.jsx)("h1",{children:"Page not found!"})})}}}]);
+//# sourceMappingURL=45.f849d45a.chunk.js.map

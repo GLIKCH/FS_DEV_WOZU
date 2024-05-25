@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>1. Overview - HTML Part 1 - sci - Exeter LMS</title><link href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/css" rel="stylesheet"><link href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/css(1)" rel="stylesheet"><link href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/css(2)" rel="stylesheet"><script async="" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/analytics.js.download"></script><script>window.Cypress&&(window.__REDUX_DEVTOOLS_EXTENSION__=window.parent.__REDUX_DEVTOOLS_EXTENSION__,window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__=window.parent.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__,window.__REACT_DEVTOOLS_GLOBAL_HOOK__=window.parent.__REACT_DEVTOOLS_GLOBAL_HOOK__)</script><style type="text/css" id="operaUserStyle">
+  video {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+  }
+
+
+  img {
+    filter: -opera-shader(url(data:text/plain;base64,Ly8gaHR0cHM6Ly9naXRodWIuY29tL0dQVU9wZW4tRWZmZWN0cy9GaWRlbGl0eUZYLUNBUwovLyB2MwoKdW5pZm9ybSBzaGFkZXIgaUNodW5rOwp1bmlmb3JtIGZsb2F0MiBpQ2h1bmtTaXplOwp1bmlmb3JtIGZsb2F0MiBpTW91c2U7CnVuaWZvcm0gZmxvYXQgaUFyZ3NbMV07Cgpjb25zdCBmbG9hdCBFUFNJT04gPSAwLjE7CmNvbnN0IGZsb2F0IFZfTUlOID0gMDsKY29uc3QgZmxvYXQgVl9MT1cgPSAwLjI1Owpjb25zdCBmbG9hdCBWX01FRCA9IDAuNTsKY29uc3QgZmxvYXQgVl9ISUdIID0gMC43NTsKY29uc3QgZmxvYXQgVl9NQVggPSAxOwoKY29uc3QgZmxvYXQgVEhSRVNIT0xEX0FSRUEgPSA4MDAgKiA2MDA7CmNvbnN0IGZsb2F0IE1JTl9BUkVBID0gNDAwICogMTAwOwpjb25zdCBmbG9hdCBNSU5fU1RSSVAgPSAyMDsKY29uc3QgZmxvYXQgTUFSR0lOID0gMTsKCmZsb2F0MyBwaXhlbChpbnQgeCwgaW50IHksIGZsb2F0MiB4eSkgewogICAgcmV0dXJuIGlDaHVuay5ldmFsKHh5ICsgZmxvYXQyKHgsIHkpKS5yZ2I7Cn0KCmZsb2F0MyBzaGFycGVuKGZsb2F0MiB4eSkgewogICAgZmxvYXQzIGYgPQogICAgICAgIHBpeGVsKC0xLCAtMSwgeHkpICogIDEgKwogICAgICAgIHBpeGVsKCAwLCAtMSwgeHkpICogLTEgKwogICAgICAgIHBpeGVsKCAxLCAtMSwgeHkpICogIDEgKwoKICAgICAgICBwaXhlbCgtMSwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMCwgMCwgeHkpICogLTEgICsKICAgICAgICBwaXhlbCggMSwgMCwgeHkpICogLTEgICsKCiAgICAgICAgcGl4ZWwoLTEsIDEsIHh5KSAqIDEgICArCiAgICAgICAgcGl4ZWwoIDAsIDEsIHh5KSAqIC0xICArCiAgICAgICAgcGl4ZWwoIDEsIDEsIHh5KSAqIDE7CiAgICByZXR1cm4gZiAvIC0xOwp9CgpmbG9hdDQgUkdYMihmbG9hdDIgeHkpIHsKICAgIGZsb2F0NCBjb2xvciA9IGlDaHVuay5ldmFsKHh5KTsKCiAgICBpZiAoaUNodW5rU2l6ZS54ICogaUNodW5rU2l6ZS55IDwgTUlOX0FSRUEpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKGlDaHVua1NpemUueSA8IE1JTl9TVFJJUCB8fCBpQ2h1bmtTaXplLnggPCBNSU5fU1RSSVApIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgaWYgKHh5LnggPCBNQVJHSU4gfHwgeHkueCA+IChpQ2h1bmtTaXplLnggLSBNQVJHSU4pIHx8CiAgICAgICAgeHkueSA8IE1BUkdJTiB8fCB4eS55ID4gKGlDaHVua1NpemUueSAtIE1BUkdJTikpIHsKICAgICAgICByZXR1cm4gY29sb3I7CiAgICB9CgogICAgcmV0dXJuIGZsb2F0NChzaGFycGVuKHh5KSwgMSk7Cn0KCmZsb2F0IG1pbjMoZmxvYXQgeCwgZmxvYXQgeSwgZmxvYXQgeikgewogICAgcmV0dXJuIG1pbih4LCBtaW4oeSwgeikpOwp9CgpmbG9hdCBtYXgzKGZsb2F0IHgsIGZsb2F0IHksIGZsb2F0IHopIHsKICAgIHJldHVybiBtYXgoeCwgbWF4KHksIHopKTsKfQoKZmxvYXQgcmNwKGZsb2F0IHYpIHsKICAgIHJldHVybiAxIC8gdjsKfQoKZmxvYXQzIFJHWDMoZmxvYXQyIHh5LCBmbG9hdCBzdHJlbmd0aCkgewogICAgZmxvYXQzIGEgPSBwaXhlbCgtMSwgLTEsIHh5KTsKICAgIGZsb2F0MyBiID0gcGl4ZWwoIDAsIC0xLCB4eSk7CiAgICBmbG9hdDMgYyA9IHBpeGVsKCAxLCAtMSwgeHkpOwoKICAgIGZsb2F0MyBkID0gcGl4ZWwoLTEsIDAsIHh5KTsKICAgIGZsb2F0MyBlID0gcGl4ZWwoIDAsIDAsIHh5KTsKICAgIGZsb2F0MyBmID0gcGl4ZWwoIDEsIDAsIHh5KTsKCiAgICBmbG9hdDMgZyA9IHBpeGVsKC0xLCAxLCB4eSk7CiAgICBmbG9hdDMgaCA9IHBpeGVsKCAwLCAxLCB4eSk7CiAgICBmbG9hdDMgaSA9IHBpeGVsKCAxLCAxLCB4eSk7CgogICAgZmxvYXQgbW5SID0gbWluMyhtaW4zKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBtbkcgPSBtaW4zKG1pbjMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG1uQiA9IG1pbjMobWluMyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG1uUjIgPSBtaW4zKG1pbjMobW5SLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG1uRzIgPSBtaW4zKG1pbjMobW5HLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG1uQjIgPSBtaW4zKG1pbjMobW5CLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBtblIgPSBtblIgKyBtblIyOwogICAgbW5HID0gbW5HICsgbW5HMjsKICAgIG1uQiA9IG1uQiArIG1uQjI7CgogICAgZmxvYXQgbXhSID0gbWF4MyhtYXgzKGQuciwgZS5yLCBmLnIpLCBiLnIsIGgucik7CiAgICBmbG9hdCBteEcgPSBtYXgzKG1heDMoZC5nLCBlLmcsIGYuZyksIGIuZywgaC5nKTsKICAgIGZsb2F0IG14QiA9IG1heDMobWF4MyhkLmIsIGUuYiwgZi5iKSwgYi5iLCBoLmIpOwoKICAgIGZsb2F0IG14UjIgPSBtYXgzKG1heDMobXhSLCBhLnIsIGMuciksIGcuciwgaS5yKTsKICAgIGZsb2F0IG14RzIgPSBtYXgzKG1heDMobXhHLCBhLmcsIGMuZyksIGcuZywgaS5nKTsKICAgIGZsb2F0IG14QjIgPSBtYXgzKG1heDMobXhCLCBhLmIsIGMuYiksIGcuYiwgaS5iKTsKCiAgICBteFIgPSBteFIgKyBteFIyOwogICAgbXhHID0gbXhHICsgbXhHMjsKICAgIG14QiA9IG14QiArIG14QjI7CgogICAgZmxvYXQgcmNwTVIgPSByY3AobXhSKTsKICAgIGZsb2F0IHJjcE1HID0gcmNwKG14Ryk7CiAgICBmbG9hdCByY3BNQiA9IHJjcChteEIpOwoKICAgIGZsb2F0IGFtcFIgPSBzYXR1cmF0ZShtaW4obW5SLCAyIC0gbXhSKSAqIHJjcE1SKTsKICAgIGZsb2F0IGFtcEcgPSBzYXR1cmF0ZShtaW4obW5HLCAyIC0gbXhHKSAqIHJjcE1HKTsKICAgIGZsb2F0IGFtcEIgPSBzYXR1cmF0ZShtaW4obW5CLCAyIC0gbXhCKSAqIHJjcE1CKTsKCiAgICBhbXBSID0gc3FydChhbXBSKTsKICAgIGFtcEcgPSBzcXJ0KGFtcEcpOwogICAgYW1wQiA9IHNxcnQoYW1wQik7CgogICAgZmxvYXQgcGVhayA9IC1yY3AobWl4KDgsIDUsIHN0cmVuZ3RoKSk7CgogICAgZmxvYXQgd1IgPSBhbXBSICogcGVhazsKICAgIGZsb2F0IHdHID0gYW1wRyAqIHBlYWs7CiAgICBmbG9hdCB3QiA9IGFtcEIgKiBwZWFrOwoKICAgIGZsb2F0IHJjcFdlaWdodFIgPSByY3AoMSArIDQgKiB3Uik7CiAgICBmbG9hdCByY3BXZWlnaHRHID0gcmNwKDEgKyA0ICogd0cpOwogICAgZmxvYXQgcmNwV2VpZ2h0QiA9IHJjcCgxICsgNCAqIHdCKTsKCiAgICByZXR1cm4gZmxvYXQzKAogICAgICAgIHNhdHVyYXRlKChiLnIgKiB3UiArIGQuciAqIHdSICsgZi5yICogd1IgKyBoLnIgKiB3UiArIGUucikgKiByY3BXZWlnaHRSKSwKICAgICAgICBzYXR1cmF0ZSgoYi5nICogd0cgKyBkLmcgKiB3RyArIGYuZyAqIHdHICsgaC5nICogd0cgKyBlLmcpICogcmNwV2VpZ2h0RyksCiAgICAgICAgc2F0dXJhdGUoKGIuYiAqIHdCICsgZC5iICogd0IgKyBmLmIgKiB3QiArIGguYiAqIHdCICsgZS5iKSAqIHJjcFdlaWdodEIpKTsKfQoKCmZsb2F0NCBtYWluKGZsb2F0MiB4eSkgewoKICAgIGZsb2F0NCBvcmlnaW5hbENvbG9yID0gaUNodW5rLmV2YWwoeHkpOwogICAgaWYgKG9yaWdpbmFsQ29sb3IuYSA8IDEpIHsKICAgICAgICByZXR1cm4gaUNodW5rLmV2YWwoeHkpOwogICAgfQoKICAgIGZsb2F0IGludGVuc2l0eSA9IGlBcmdzWzBdOwogICAgZmxvYXQgc3RyZW5ndGggPSAwOwogICAgZmxvYXQzIGNvbG9yOwoKICAgIGlmIChpbnRlbnNpdHkgPCBWX01JTiArIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMC4xMDsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfTE9XIC0gRVBTSU9OICYmIGludGVuc2l0eSA8IFZfTE9XICsgRVBTSU9OKSB7CiAgICAgICAgc3RyZW5ndGggPSAwLjMzOwogICAgICAgIGNvbG9yID0gUkdYMyh4eSwgc3RyZW5ndGgpOwoKICAgIH0gZWxzZSBpZiAoaW50ZW5zaXR5ID4gVl9NRUQgLSBFUFNJT04gJiYgaW50ZW5zaXR5IDwgVl9NRUQgKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuNTsKICAgICAgICBjb2xvciA9IFJHWDMoeHksIHN0cmVuZ3RoKTsKCiAgICB9IGVsc2UgaWYgKGludGVuc2l0eSA+IFZfSElHSCAtIEVQU0lPTiAmJiBpbnRlbnNpdHkgPCBWX0hJR0ggKyBFUFNJT04pIHsKICAgICAgICBzdHJlbmd0aCA9IDAuOTk7CiAgICAgICAgY29sb3IgPSBSR1gzKHh5LCBzdHJlbmd0aCk7CgogICAgfSBlbHNlIGlmIChpbnRlbnNpdHkgPiBWX01BWCAtIEVQU0lPTikgewogICAgICAgIHN0cmVuZ3RoID0gMTsKICAgICAgICBjb2xvciA9IFJHWDIoeHkpLnJnYjsKICAgIH0KCiAgICByZXR1cm4gZmxvYXQ0KGNvbG9yLCBvcmlnaW5hbENvbG9yLmEpOwp9) -opera-args(0.50 calc(env(-opera-gx-accent-color-r)/255) calc(env(-opera-gx-accent-color-g)/255) calc(env(-opera-gx-accent-color-b)/255)));
+  }
+</style><link href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/16.c9b9a2d6.chunk.css" rel="stylesheet"><link href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/main.de6e2edb.chunk.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/11.33767987.chunk.css"><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/11.92b1ff7a.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/13.8d0cdf87.chunk.css"><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/13.5e7421b2.chunk.js.download"></script><style id="ace_editor.css">.ace_editor {position: relative;overflow: hidden;font: 12px/normal 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', 'source-code-pro', monospace;direction: ltr;text-align: left;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}.ace_scroller {position: absolute;overflow: hidden;top: 0;bottom: 0;background-color: inherit;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;cursor: text;}.ace_content {position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;min-width: 100%;}.ace_dragging .ace_scroller:before{position: absolute;top: 0;left: 0;right: 0;bottom: 0;content: '';background: rgba(250, 250, 250, 0.01);z-index: 1000;}.ace_dragging.ace_dark .ace_scroller:before{background: rgba(0, 0, 0, 0.01);}.ace_selecting, .ace_selecting * {cursor: text !important;}.ace_gutter {position: absolute;overflow : hidden;width: auto;top: 0;bottom: 0;left: 0;cursor: default;z-index: 4;-ms-user-select: none;-moz-user-select: none;-webkit-user-select: none;user-select: none;}.ace_gutter-active-line {position: absolute;left: 0;right: 0;}.ace_scroller.ace_scroll-left {box-shadow: 17px 0 16px -16px rgba(0, 0, 0, 0.4) inset;}.ace_gutter-cell {padding-left: 19px;padding-right: 6px;background-repeat: no-repeat;}.ace_gutter-cell.ace_error {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABOFBMVEX/////////QRswFAb/Ui4wFAYwFAYwFAaWGAfDRymzOSH/PxswFAb/SiUwFAYwFAbUPRvjQiDllog5HhHdRybsTi3/Tyv9Tir+Syj/UC3////XurebMBIwFAb/RSHbPx/gUzfdwL3kzMivKBAwFAbbvbnhPx66NhowFAYwFAaZJg8wFAaxKBDZurf/RB6mMxb/SCMwFAYwFAbxQB3+RB4wFAb/Qhy4Oh+4QifbNRcwFAYwFAYwFAb/QRzdNhgwFAYwFAbav7v/Uy7oaE68MBK5LxLewr/r2NXewLswFAaxJw4wFAbkPRy2PyYwFAaxKhLm1tMwFAazPiQwFAaUGAb/QBrfOx3bvrv/VC/maE4wFAbRPBq6MRO8Qynew8Dp2tjfwb0wFAbx6eju5+by6uns4uH9/f36+vr/GkHjAAAAYnRSTlMAGt+64rnWu/bo8eAA4InH3+DwoN7j4eLi4xP99Nfg4+b+/u9B/eDs1MD1mO7+4PHg2MXa347g7vDizMLN4eG+Pv7i5evs/v79yu7S3/DV7/498Yv24eH+4ufQ3Ozu/v7+y13sRqwAAADLSURBVHjaZc/XDsFgGIBhtDrshlitmk2IrbHFqL2pvXf/+78DPokj7+Fz9qpU/9UXJIlhmPaTaQ6QPaz0mm+5gwkgovcV6GZzd5JtCQwgsxoHOvJO15kleRLAnMgHFIESUEPmawB9ngmelTtipwwfASilxOLyiV5UVUyVAfbG0cCPHig+GBkzAENHS0AstVF6bacZIOzgLmxsHbt2OecNgJC83JERmePUYq8ARGkJx6XtFsdddBQgZE2nPR6CICZhawjA4Fb/chv+399kfR+MMMDGOQAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: 2px center;}.ace_gutter-cell.ace_warning {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAmVBMVEX///8AAAD///8AAAAAAABPSzb/5sAAAAB/blH/73z/ulkAAAAAAAD85pkAAAAAAAACAgP/vGz/rkDerGbGrV7/pkQICAf////e0IsAAAD/oED/qTvhrnUAAAD/yHD/njcAAADuv2r/nz//oTj/p064oGf/zHAAAAA9Nir/tFIAAAD/tlTiuWf/tkIAAACynXEAAAAAAAAtIRW7zBpBAAAAM3RSTlMAABR1m7RXO8Ln31Z36zT+neXe5OzooRDfn+TZ4p3h2hTf4t3k3ucyrN1K5+Xaks52Sfs9CXgrAAAAjklEQVR42o3PbQ+CIBQFYEwboPhSYgoYunIqqLn6/z8uYdH8Vmdnu9vz4WwXgN/xTPRD2+sgOcZjsge/whXZgUaYYvT8QnuJaUrjrHUQreGczuEafQCO/SJTufTbroWsPgsllVhq3wJEk2jUSzX3CUEDJC84707djRc5MTAQxoLgupWRwW6UB5fS++NV8AbOZgnsC7BpEAAAAABJRU5ErkJggg==");background-position: 2px center;}.ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAAJ0Uk5TAAB2k804AAAAPklEQVQY02NgIB68QuO3tiLznjAwpKTgNyDbMegwisCHZUETUZV0ZqOquBpXj2rtnpSJT1AEnnRmL2OgGgAAIKkRQap2htgAAAAASUVORK5CYII=");background-position: 2px center;}.ace_dark .ace_gutter-cell.ace_info {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAAJFBMVEUAAAChoaGAgIAqKiq+vr6tra1ZWVmUlJSbm5s8PDxubm56enrdgzg3AAAAAXRSTlMAQObYZgAAAClJREFUeNpjYMAPdsMYHegyJZFQBlsUlMFVCWUYKkAZMxZAGdxlDMQBAG+TBP4B6RyJAAAAAElFTkSuQmCC");}.ace_scrollbar {position: absolute;right: 0;bottom: 0;z-index: 6;}.ace_scrollbar-inner {position: absolute;cursor: text;left: 0;top: 0;}.ace_scrollbar-v{overflow-x: hidden;overflow-y: scroll;top: 0;}.ace_scrollbar-h {overflow-x: scroll;overflow-y: hidden;left: 0;}.ace_print-margin {position: absolute;height: 100%;}.ace_text-input {position: absolute;z-index: 0;width: 0.5em;height: 1em;opacity: 0;background: transparent;-moz-appearance: none;appearance: none;border: none;resize: none;outline: none;overflow: hidden;font: inherit;padding: 0 1px;margin: 0 -1px;text-indent: -1em;-ms-user-select: text;-moz-user-select: text;-webkit-user-select: text;user-select: text;white-space: pre!important;}.ace_text-input.ace_composition {background: inherit;color: inherit;z-index: 1000;opacity: 1;text-indent: 0;}.ace_layer {z-index: 1;position: absolute;overflow: hidden;word-wrap: normal;white-space: pre;height: 100%;width: 100%;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;pointer-events: none;}.ace_gutter-layer {position: relative;width: auto;text-align: right;pointer-events: auto;}.ace_text-layer {font: inherit !important;}.ace_cjk {display: inline-block;text-align: center;}.ace_cursor-layer {z-index: 4;}.ace_cursor {z-index: 4;position: absolute;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;border-left: 2px solid;transform: translatez(0);}.ace_multiselect .ace_cursor {border-left-width: 1px;}.ace_slim-cursors .ace_cursor {border-left-width: 1px;}.ace_overwrite-cursors .ace_cursor {border-left-width: 0;border-bottom: 1px solid;}.ace_hidden-cursors .ace_cursor {opacity: 0.2;}.ace_smooth-blinking .ace_cursor {-webkit-transition: opacity 0.18s;transition: opacity 0.18s;}.ace_marker-layer .ace_step, .ace_marker-layer .ace_stack {position: absolute;z-index: 3;}.ace_marker-layer .ace_selection {position: absolute;z-index: 5;}.ace_marker-layer .ace_bracket {position: absolute;z-index: 6;}.ace_marker-layer .ace_active-line {position: absolute;z-index: 2;}.ace_marker-layer .ace_selected-word {position: absolute;z-index: 4;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}.ace_line .ace_fold {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;display: inline-block;height: 11px;margin-top: -2px;vertical-align: middle;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACJJREFUeNpi+P//fxgTAwPDBxDxD078RSX+YeEyDFMCIMAAI3INmXiwf2YAAAAASUVORK5CYII=");background-repeat: no-repeat, repeat-x;background-position: center center, top left;color: transparent;border: 1px solid black;border-radius: 2px;cursor: pointer;pointer-events: auto;}.ace_dark .ace_fold {}.ace_fold:hover{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAJCAYAAADU6McMAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJpJREFUeNpi/P//PwOlgAXGYGRklAVSokD8GmjwY1wasKljQpYACtpCFeADcHVQfQyMQAwzwAZI3wJKvCLkfKBaMSClBlR7BOQikCFGQEErIH0VqkabiGCAqwUadAzZJRxQr/0gwiXIal8zQQPnNVTgJ1TdawL0T5gBIP1MUJNhBv2HKoQHHjqNrA4WO4zY0glyNKLT2KIfIMAAQsdgGiXvgnYAAAAASUVORK5CYII="),url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA3CAYAAADNNiA5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACBJREFUeNpi+P//fz4TAwPDZxDxD5X4i5fLMEwJgAADAEPVDbjNw87ZAAAAAElFTkSuQmCC");}.ace_tooltip {background-color: #FFF;background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.1));border: 1px solid gray;border-radius: 1px;box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);color: black;max-width: 100%;padding: 3px 4px;position: fixed;z-index: 999999;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;cursor: default;white-space: pre;word-wrap: break-word;line-height: normal;font-style: normal;font-weight: normal;letter-spacing: normal;pointer-events: none;}.ace_folding-enabled > .ace_gutter-cell {padding-right: 13px;}.ace_fold-widget {-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0 -12px 0 1px;display: none;width: 11px;vertical-align: top;background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42mWKsQ0AMAzC8ixLlrzQjzmBiEjp0A6WwBCSPgKAXoLkqSot7nN3yMwR7pZ32NzpKkVoDBUxKAAAAABJRU5ErkJggg==");background-repeat: no-repeat;background-position: center;border-radius: 3px;border: 1px solid transparent;cursor: pointer;}.ace_folding-enabled .ace_fold-widget {display: inline-block;   }.ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAANElEQVR42m3HwQkAMAhD0YzsRchFKI7sAikeWkrxwScEB0nh5e7KTPWimZki4tYfVbX+MNl4pyZXejUO1QAAAABJRU5ErkJggg==");}.ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAGCAYAAAAG5SQMAAAAOUlEQVR42jXKwQkAMAgDwKwqKD4EwQ26sSOkVWjgIIHAzPiCgaqiqnJHZnKICBERHN194O5b9vbLuAVRL+l0YWnZAAAAAElFTkSuQmCCXA==");}.ace_fold-widget:hover {border: 1px solid rgba(0, 0, 0, 0.3);background-color: rgba(255, 255, 255, 0.2);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);}.ace_fold-widget:active {border: 1px solid rgba(0, 0, 0, 0.4);background-color: rgba(0, 0, 0, 0.05);box-shadow: 0 1px 1px rgba(255, 255, 255, 0.8);}.ace_dark .ace_fold-widget {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHklEQVQIW2P4//8/AzoGEQ7oGCaLLAhWiSwB146BAQCSTPYocqT0AAAAAElFTkSuQmCC");}.ace_dark .ace_fold-widget.ace_end {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAH0lEQVQIW2P4//8/AxQ7wNjIAjDMgC4AxjCVKBirIAAF0kz2rlhxpAAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget.ace_closed {background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAHElEQVQIW2P4//+/AxAzgDADlOOAznHAKgPWAwARji8UIDTfQQAAAABJRU5ErkJggg==");}.ace_dark .ace_fold-widget:hover {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);background-color: rgba(255, 255, 255, 0.1);}.ace_dark .ace_fold-widget:active {box-shadow: 0 1px 1px rgba(255, 255, 255, 0.2);}.ace_fold-widget.ace_invalid {background-color: #FFB4B4;border-color: #DE5555;}.ace_fade-fold-widgets .ace_fold-widget {-webkit-transition: opacity 0.4s ease 0.05s;transition: opacity 0.4s ease 0.05s;opacity: 0;}.ace_fade-fold-widgets:hover .ace_fold-widget {-webkit-transition: opacity 0.05s ease 0.05s;transition: opacity 0.05s ease 0.05s;opacity:1;}.ace_underline {text-decoration: underline;}.ace_bold {font-weight: bold;}.ace_nobold .ace_bold {font-weight: normal;}.ace_italic {font-style: italic;}.ace_error-marker {background-color: rgba(255, 0, 0,0.2);position: absolute;z-index: 9;}.ace_highlight-marker {background-color: rgba(255, 255, 0,0.2);position: absolute;z-index: 8;}.ace_br1 {border-top-left-radius    : 3px;}.ace_br2 {border-top-right-radius   : 3px;}.ace_br3 {border-top-left-radius    : 3px; border-top-right-radius:    3px;}.ace_br4 {border-bottom-right-radius: 3px;}.ace_br5 {border-top-left-radius    : 3px; border-bottom-right-radius: 3px;}.ace_br6 {border-top-right-radius   : 3px; border-bottom-right-radius: 3px;}.ace_br7 {border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px;}.ace_br8 {border-bottom-left-radius : 3px;}.ace_br9 {border-top-left-radius    : 3px; border-bottom-left-radius:  3px;}.ace_br10{border-top-right-radius   : 3px; border-bottom-left-radius:  3px;}.ace_br11{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-left-radius:  3px;}.ace_br12{border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br13{border-top-left-radius    : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br14{border-top-right-radius   : 3px; border-bottom-right-radius: 3px; border-bottom-left-radius:  3px;}.ace_br15{border-top-left-radius    : 3px; border-top-right-radius:    3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;}.ace_text-input-ios {position: absolute !important;top: -100000px !important;left: -100000px !important;}
+/*# sourceURL=ace/css/ace_editor.css */</style><style id="ace-tm">.ace-tm .ace_gutter {background: #f0f0f0;color: #333;}.ace-tm .ace_print-margin {width: 1px;background: #e8e8e8;}.ace-tm .ace_fold {background-color: #6B72E6;}.ace-tm {background-color: #FFFFFF;color: black;}.ace-tm .ace_cursor {color: black;}.ace-tm .ace_invisible {color: rgb(191, 191, 191);}.ace-tm .ace_storage,.ace-tm .ace_keyword {color: blue;}.ace-tm .ace_constant {color: rgb(197, 6, 11);}.ace-tm .ace_constant.ace_buildin {color: rgb(88, 72, 246);}.ace-tm .ace_constant.ace_language {color: rgb(88, 92, 246);}.ace-tm .ace_constant.ace_library {color: rgb(6, 150, 14);}.ace-tm .ace_invalid {background-color: rgba(255, 0, 0, 0.1);color: red;}.ace-tm .ace_support.ace_function {color: rgb(60, 76, 114);}.ace-tm .ace_support.ace_constant {color: rgb(6, 150, 14);}.ace-tm .ace_support.ace_type,.ace-tm .ace_support.ace_class {color: rgb(109, 121, 222);}.ace-tm .ace_keyword.ace_operator {color: rgb(104, 118, 135);}.ace-tm .ace_string {color: rgb(3, 106, 7);}.ace-tm .ace_comment {color: rgb(76, 136, 107);}.ace-tm .ace_comment.ace_doc {color: rgb(0, 102, 255);}.ace-tm .ace_comment.ace_doc.ace_tag {color: rgb(128, 159, 191);}.ace-tm .ace_constant.ace_numeric {color: rgb(0, 0, 205);}.ace-tm .ace_variable {color: rgb(49, 132, 149);}.ace-tm .ace_xml-pe {color: rgb(104, 104, 91);}.ace-tm .ace_entity.ace_name.ace_function {color: #0000A2;}.ace-tm .ace_heading {color: rgb(12, 7, 255);}.ace-tm .ace_list {color:rgb(185, 6, 144);}.ace-tm .ace_meta.ace_tag {color:rgb(0, 22, 142);}.ace-tm .ace_string.ace_regex {color: rgb(255, 0, 0)}.ace-tm .ace_marker-layer .ace_selection {background: rgb(181, 213, 255);}.ace-tm.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px white;}.ace-tm .ace_marker-layer .ace_step {background: rgb(252, 255, 0);}.ace-tm .ace_marker-layer .ace_stack {background: rgb(164, 229, 101);}.ace-tm .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid rgb(192, 192, 192);}.ace-tm .ace_marker-layer .ace_active-line {background: rgba(0, 0, 0, 0.07);}.ace-tm .ace_gutter-active-line {background-color : #dcdcdc;}.ace-tm .ace_marker-layer .ace_selected-word {background: rgb(250, 250, 255);border: 1px solid rgb(200, 200, 250);}.ace-tm .ace_indent-guide {background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bLly//BwAmVgd1/w11/gAAAABJRU5ErkJggg==") right repeat-y;}
+/*# sourceURL=ace/css/ace-tm */</style><style>    .error_widget_wrapper {        background: inherit;        color: inherit;        border:none    }    .error_widget {        border-top: solid 2px;        border-bottom: solid 2px;        margin: 5px 0;        padding: 10px 40px;        white-space: pre-wrap;    }    .error_widget.ace_error, .error_widget_arrow.ace_error{        border-color: #ff5a5a    }    .error_widget.ace_warning, .error_widget_arrow.ace_warning{        border-color: #F1D817    }    .error_widget.ace_info, .error_widget_arrow.ace_info{        border-color: #5a5a5a    }    .error_widget.ace_ok, .error_widget_arrow.ace_ok{        border-color: #5aaa5a    }    .error_widget_arrow {        position: absolute;        border: solid 5px;        border-top-color: transparent!important;        border-right-color: transparent!important;        border-left-color: transparent!important;        top: -5px;    }</style><link rel="shortcut icon" href="https://sci.exeterlms.com/favicon/sci-favicon.png"><style data-jss="" data-meta="Themed">
+h1 {
+  color: #1B1E4D;
+}
+.color.green, .color.green > p {
+  color: #28a745;
+}
+.color.blue {
+  color: #1B1E4D;
+}
+.color.secondary {
+  color: #1B1E4D;
+}
+.background-color.green {
+  background-color: #28a745;
+}
+.background-color.blue {
+  background: #1B1E4D;
+}
+.cc-checkbox label {
+  background: #1B1E4D;
+}
+</style><style data-jss="" data-meta="Themed">
+.courseLessonCount-0-2-51 span {
+  color: #757575;
+  font-size: 14px;
+  text-align: right;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.14;
+}
+.completedLessons-0-2-52 {
+  color: #1B1E4D !important;
+  font-weight: 600;
+}
+</style><style data-jss="" data-meta="n, Unthemed">
+.n-root-0-2-39 > ul {
+  padding: 0;
+  padding-lect: 0;
+}
+.n-root-0-2-39 > ul > li {
+  list-style: none;
+}
+.n-button-0-2-40 {
+  color: #4a4a4a;
+}
+.n-currentPage-0-2-41 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+</style><style data-jss="" data-meta="Component, Unthemed">
+.Component-root-0-2-21 > ul {
+  margin: 0;
+  padding: 0;
+}
+.Component-root-0-2-21 li.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.Component-root-0-2-21 li.list-group-item:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.Component-root-0-2-21 > *:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.Component-headerContainer-0-2-22 h2, .Component-headerContainer-0-2-22 h3 {
+  margin: 0;
+  display: inline-block;
+  font-size: 18px;
+}
+</style><style data-jss="" data-meta="n, Themed">
+</style><style data-jss="" data-meta="Component, Unthemed">
+.Component-header-0-2-42 {
+  padding: 1em 1.5em;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+.Component-body-0-2-43 {
+  padding: 1em 1.75em;
+}
+.Component-footer-0-2-44 {
+  padding: 0.65em 1em;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+</style><style data-jss="" data-meta="Component, Themed">
+.Component-root-0-2-23 {
+  opacity: 0;
+  z-index: 20;
+  background-color: #f8f8f8;
+}
+.Component-active-0-2-24 {
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  display: flex;
+  opacity: 1;
+  z-index: 20;
+  position: absolute;
+  transition: opacity 500ms;
+  background-color: #1B1E4D;
+}
+.Component-active-0-2-24::before {
+  width: 100%;
+  height: 3px;
+  margin: 0;
+  content: "";
+  z-index: 20;
+  position: relative;
+  animation: progress-bar 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  transition: opacity 500ms;
+  background-color: #e74c3c;
+}
+@-webkit-keyframes Component-keyframes-progress-bar-0-2-25 {
+  0% {
+    margin-left: 0;
+    margin-right: 100%;
+  }
+  50% {
+    margin-left: 25%;
+    margin-right: 0;
+  }
+  100% {
+    margin-left: 100%;
+    margin-right: 0;
+  }
+}
+</style><style data-jss="" data-meta="Component, Unthemed">
+.Component-icon-0-2-20 {
+  color: #b0b8c2;
+  cursor: pointer;
+  font-size: 17px;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+</style><style data-jss="" data-meta="Component, Unthemed">
+.Component-root-0-2-4 {
+  margin: 1.5em 0;
+}
+.Component-root-0-2-4 > *:not(table):not(hr) {
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.Component-strongTitle-0-2-5 {
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+.Component-topHeaderContainer-0-2-6 {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.Component-weakTitle-0-2-7 {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 18px;
+  font-weight: normal;
+}
+.Component-header-0-2-8 {
+  color: #3a3a3a;
+  margin: 0;
+  font-size: 22px;
+  word-wrap: break-word;
+  font-weight: normal;
+  padding-right: 1em;
+}
+.Component-divider-0-2-9 {
+  border: 1px solid #ddd;
+  margin: 0;
+}
+.Component-divider-0-2-9 + *:not(table) {
+  margin-top: 1.5em;
+}
+.Component-flexContainer-0-2-10 {
+  margin: 1em 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.Component-subHeading-0-2-11 {
+  margin: 0;
+  font-weight: normal;
+}
+.Component-confirmDeleteContainer-0-2-12 {
+  padding: 25px 0;
+  text-align: center;
+}
+</style><style data-jss="" data-meta="n, Themed">
+.n-container-0-2-26 {
+  top: 100%;
+  float: right;
+  right: 0;
+  border: 1px solid #ccc;
+  margin: 2px 0 0;
+  display: none;
+  padding: 5px 0 5px;
+  z-index: 1000;
+  position: absolute;
+  font-size: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  text-align: left;
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.n-openContainer-0-2-27 {
+  top: 100%;
+  float: right;
+  right: 0;
+  border: 1px solid #ccc;
+  margin: 2px 0 0;
+  display: block;
+  padding: 5px 0 5px;
+  z-index: 1000;
+  position: absolute;
+  font-size: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  list-style: none;
+  text-align: left;
+  border-radius: 4px;
+  background-clip: padding-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.n-toggle-0-2-28 {
+  cursor: pointer;
+  height: 50px;
+}
+.n-dropdownItem-0-2-29 {
+  color: inherit;
+  border: 0;
+  display: block;
+  padding: 5px 13px 5px 13px;
+  min-width: 210px;
+  background: none;
+  text-align: left;
+  white-space: nowrap;
+}
+.n-dropdownItem-0-2-29:hover {
+  color: #337ab7;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+.n-usersName-0-2-30 {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 260px;
+  white-space: nowrap;
+  padding-right: 10px;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 991px) {
+  .n-usersName-0-2-30 {
+    width: 0;
+    padding-right: 0;
+  }
+}
+</style><style data-jss="" data-meta="Component, Themed">
+.Component-root-0-2-13.navbar-default {
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: #1B1E4D;
+  border-bottom-color: #1B1E4D;
+}
+.Component-root-0-2-13.navbar-default .navbar-toggle {
+  color: #fff;
+}
+.Component-root-0-2-13.navbar-default .notification-icon-unread:after {
+  background: #c90c32;
+}
+.Component-root-0-2-13.navbar-default .navbar-collapse.in {
+  overflow-y: unset;
+}
+@media (min-width: 768px) {
+  .Component-root-0-2-13.navbar-default .cc-default-avatar {
+    margin-top: -10px;
+  }
+}
+@media (min-width: 768px) {
+  .Component-root-0-2-13.navbar-default .navbar-nav {
+    margin: 0;
+  }
+}
+.Component-root-0-2-13.navbar-default .navbar-toggle>.icon-bar {
+  background-color: #fff;
+}
+.Component-root-0-2-13.navbar-default .navbar-toggle:hover, .Component-root-0-2-13.navbar-default .navbar-toggle:focus {
+  background-color: #E81D2C;
+}
+.Component-root-0-2-13.navbar-default .navbar-nav > li>a {
+  color: #fff;
+  background-color: #1B1E4D;
+}
+.Component-root-0-2-13.navbar-default .navbar-nav > li.active > a {
+  color: #E81D2C;
+  font-weight: 900;
+}
+.Component-root-0-2-13.navbar-default .navbar-nav > li>a:hover, .Component-root-0-2-13.navbar-default .navbar-nav > li>a:focus {
+  color: #e3cd8a;
+  background-color: #1B1E4D;
+}
+.Component-logo-0-2-14 img {
+  cursor: pointer;
+  height: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.Component-logo-0-2-14:focus img {
+  outline: auto 5px #2e63a5;
+}
+.Component-mobileLessonMenuNav-0-2-15 {
+  margin: 0 0 0 -15px;
+}
+.Component-mobileLessonMenuNav-0-2-15.nav>li {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .Component-mobileLessonMenuNav-0-2-15 {
+    display: none;
+  }
+}
+.Component-lessonMenu-0-2-16 {
+  padding: 11px 10px;
+}
+.Component-lessonMenu-0-2-16>a[role=button]:hover, .Component-lessonMenu-0-2-16>a[role=button]:focus {
+  background-color: #1B1E4D;
+}
+.Component-lessonMenu-0-2-16 img {
+  height: 28px;
+}
+@media screen and (max-width: 767px) {
+  .Component-lessonMenu-0-2-16 {
+    display: none;
+    padding: 1px 0;
+  }
+}
+.Component-courseName-0-2-17 {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .Component-courseName-0-2-17 {
+    font-size: 14px;
+  }
+}
+.Component-impersonationBanner-0-2-18 {
+  left: 0;
+  color: white;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  padding: 8px 15px;
+  z-index: 1000;
+  position: fixed;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6500ad;
+}
+.Component-impersonationBanner-0-2-18 button {
+  color: #6500ad;
+  border: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+  background-color: white;
+}
+.Component-impersonationBanner-0-2-18 button:hover {
+  background-color: #e5d2f2;
+}
+.Component-impersonationBorder-0-2-19 {
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 5px solid #6500ad;
+  bottom: 0;
+  z-index: 10000;
+  position: fixed;
+  pointer-events: none;
+}
+</style><style data-jss="" data-meta="Component, Unthemed">
+.Component-root-0-2-34 {
+  top: 235px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  display: block;
+  outline: 0;
+  z-index: 999;
+  position: fixed;
+}
+.Component-button-0-2-35 {
+  left: -2px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  padding: 8px 16px;
+  position: fixed;
+  font-size: 14px;
+  transform: rotate(-90deg);
+  box-shadow: 0 0 10px rgba(0,0,0,.1), inset 0 -1px 0 rgba(0,0,0,.08), inset 0 -2px 0 rgba(255,255,255,.7), inset 0 9px 29px rgba(0,0,0,.1);
+  font-weight: 700;
+  white-space: nowrap;
+  border-color: white;
+  background-color: rgb(234, 22, 0);
+  transform-origin: top left;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.Component-button-0-2-35:hover {
+  left: 0;
+  color: white;
+}
+@media (min-width: 768px) {
+  .Component-button-0-2-35 {
+    display: block;
+  }
+}
+</style><style data-jss="" data-meta="Themed">
+.root-0-2-46 .progress {
+  float: left;
+  width: calc(100% - 40px);
+  height: 14px;
+  box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 0.5em;
+  border-radius: 2px;
+  margin-bottom: 0;
+  background-color: #ededed;
+}
+.root-0-2-46 .progress-bar {
+  background-color: #1B1E4D;
+}
+.grayscale-0-2-47 {
+  opacity: 0.7;
+}
+.grayscale-0-2-47 .color.green {
+  color: gray;
+}
+.grayscale-0-2-47 .progress-bar {
+  background-color: gray;
+}
+.grayscale-0-2-47 .cc-course-lesson button {
+  color: gray;
+  border-color: gray;
+  background-color: #fff;
+}
+.grayscale-0-2-47 img {
+  opacity: 0.5;
+}
+.progressLabel-0-2-48 {
+  color: #1B1E4D;
+  float: right;
+  font-size: 14px;
+  margin-top: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 1.14;
+}
+.courseSideNavIcon-0-2-49 {
+  width: 57px;
+  cursor: pointer;
+  z-index: 1;
+  position: relative;
+  margin-top: 0.2em;
+  border-radius: 5px;
+  pointer-events: none;
+}
+.lessonNavPopoutButton-0-2-50 {
+  background: initial;
+  background-color: #1B1E4D;
+}
+</style><style data-jss="" data-meta="Component, Themed">
+.Component-topicCircle-0-2-68 {
+  color: #1B1E4D;
+  width: 30px;
+  position: relative;
+  font-size: 15px;
+  box-sizing: content-box;
+  text-align: center;
+  font-weight: 600;
+  line-height: 30px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 50%;
+}
+.Component-topicCircle-0-2-68:hover {
+  border-color: #1B1E4D;
+  background-color: rgba(27, 30, 77, 0.1);
+}
+.Component-topicCircleActive-0-2-69 {
+  color: #1B1E4D;
+  border: 1px solid #1B1E4D;
+  background-color: #edebeb;
+}
+.Component-topicCircleActive-0-2-69:hover {
+  color: #1B1E4D;
+  background-color: #b3b3b3;
+}
+.Component-topicCircleNotViewed-0-2-70 {
+  color: #b3b3b3;
+}
+.Component-topicCircleNotViewed-0-2-70:hover {
+  border-color: #b3b3b3;
+  background-color: initial;
+}
+.Component-activityIndicatorIncomplete-0-2-72 {
+  background-color: #e27c00;
+}
+.Component-activityIndicatorComplete-0-2-73 {
+  background-color: #1B1E4D;
+}
+.Component-activityIndicatorNotViewed-0-2-74 {
+  background-color: #b3b3b3;
+}
+.Component-activityIndicatorPending-0-2-75 {
+  background-color: #a94442;
+}
+.Component-activeIndicatorNew-0-2-76 {
+  color: #017a46;
+  font-size: 10px;
+  margin-left: 0px;
+}
+</style><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/45.f849d45a.chunk.js.download"></script><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/2.45f4f30f.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/8.892108fa.chunk.css"><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/8.4e0d71c5.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/25.acd153b0.chunk.css"><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/25.bd34d916.chunk.js.download"></script><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/7.70b748d6.chunk.js.download"></script><link rel="stylesheet" type="text/css" href="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/5.3401935b.chunk.css"><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/5.c005df20.chunk.js.download"></script><script charset="utf-8" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/38.44d66faa.chunk.js.download"></script><style id="ace-tomorrow">.ace-tomorrow .ace_gutter {background: #f6f6f6;color: #4D4D4C}.ace-tomorrow .ace_print-margin {width: 1px;background: #f6f6f6}.ace-tomorrow {background-color: #FFFFFF;color: #4D4D4C}.ace-tomorrow .ace_cursor {color: #AEAFAD}.ace-tomorrow .ace_marker-layer .ace_selection {background: #D6D6D6}.ace-tomorrow.ace_multiselect .ace_selection.ace_start {box-shadow: 0 0 3px 0px #FFFFFF;}.ace-tomorrow .ace_marker-layer .ace_step {background: rgb(255, 255, 0)}.ace-tomorrow .ace_marker-layer .ace_bracket {margin: -1px 0 0 -1px;border: 1px solid #D1D1D1}.ace-tomorrow .ace_marker-layer .ace_active-line {background: #EFEFEF}.ace-tomorrow .ace_gutter-active-line {background-color : #dcdcdc}.ace-tomorrow .ace_marker-layer .ace_selected-word {border: 1px solid #D6D6D6}.ace-tomorrow .ace_invisible {color: #D1D1D1}.ace-tomorrow .ace_keyword,.ace-tomorrow .ace_meta,.ace-tomorrow .ace_storage,.ace-tomorrow .ace_storage.ace_type,.ace-tomorrow .ace_support.ace_type {color: #8959A8}.ace-tomorrow .ace_keyword.ace_operator {color: #3E999F}.ace-tomorrow .ace_constant.ace_character,.ace-tomorrow .ace_constant.ace_language,.ace-tomorrow .ace_constant.ace_numeric,.ace-tomorrow .ace_keyword.ace_other.ace_unit,.ace-tomorrow .ace_support.ace_constant,.ace-tomorrow .ace_variable.ace_parameter {color: #F5871F}.ace-tomorrow .ace_constant.ace_other {color: #666969}.ace-tomorrow .ace_invalid {color: #FFFFFF;background-color: #C82829}.ace-tomorrow .ace_invalid.ace_deprecated {color: #FFFFFF;background-color: #8959A8}.ace-tomorrow .ace_fold {background-color: #4271AE;border-color: #4D4D4C}.ace-tomorrow .ace_entity.ace_name.ace_function,.ace-tomorrow .ace_support.ace_function,.ace-tomorrow .ace_variable {color: #4271AE}.ace-tomorrow .ace_support.ace_class,.ace-tomorrow .ace_support.ace_type {color: #C99E00}.ace-tomorrow .ace_heading,.ace-tomorrow .ace_markup.ace_heading,.ace-tomorrow .ace_string {color: #718C00}.ace-tomorrow .ace_entity.ace_name.ace_tag,.ace-tomorrow .ace_entity.ace_other.ace_attribute-name,.ace-tomorrow .ace_meta.ace_tag,.ace-tomorrow .ace_string.ace_regexp,.ace-tomorrow .ace_variable {color: #C82829}.ace-tomorrow .ace_comment {color: #8E908C}.ace-tomorrow .ace_indent-guide {background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAE0lEQVQImWP4////f4bdu3f/BwAlfgctduB85QAAAABJRU5ErkJggg==) right repeat-y}
+/*# sourceURL=ace/css/ace-tomorrow */</style></head><body id="body" class="" style="background-color: rgb(249, 249, 249);"><div id="root"><div class="sr-only" role="status" aria-live="polite" aria-atomic="true"><span>Navigated to page 1. Overview of lesson HTML Part 1</span></div><div id="app"><a href="https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073#reach-skip-nav" data-reach-skip-link="" data-reach-skip-nav-link="">Skip to content</a><div class="cc-lesson-overlay" style="width: 0px;"></div><div class="cc-lesson-side-nav" id="a11y-lesson-menu" role="menu" aria-labelledby="a11y-lesson-menu-toggle" aria-hidden="true"><div role="region" aria-labelledby="course-panel-header-1021" class="Component-root-0-2-21 panel panel-default cc-course root-0-2-46 grayscale-0-2-47"><div class="panel-heading Component-headerContainer-0-2-22" style="background-color: rgb(248, 248, 248); border-top-right-radius: 4px; border-top-left-radius: 4px;"><div class="media" style="margin-left: -3px;"><div class="media-left"><button class="lessonNavPopoutButton-0-2-50 cc-button-reset" aria-label="close courses" id="menuIcon" style="position: absolute; top: 0px; left: 0px; width: 80px; height: 80px; z-index: 0;"></button><img alt="" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/wozu-lesson-menu-icon.84c6d0c6.svg" class="courseSideNavIcon-0-2-49"></div><div class="media-body" style="padding-left: 0.75em;"><h3 id="course-panel-header-1021">SWD100 (Jul 15 - Aug 4)</h3><button type="button" class="cc-button-reset" aria-label="course closed" style="padding: 0px 0.25em; margin-left: 0.25em; font-size: 1.1em;"><span class="fa fa-ban" aria-hidden="true" style="border-bottom: 1px dashed black; line-height: 1.2;"></span></button><div style="font-size: 13px; color: rgb(153, 153, 153); font-weight: normal;"><span class="cc-contrast-black">Location: Pacific Daylight Time (PDT) </span><button type="button" class="cc-button-reset" aria-label="more info"><span class="fa fa-info-circle fa-fw" aria-hidden="true" style="color: rgb(156, 91, 0);"></span></button></div><div class="progress"><div role="progressbar" class="progress-bar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div></div><span class="cc-progress-label progressLabel-0-2-48 cc-contrast-black">100%</span></div></div></div><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable " aria-controls="cc-Coding From Scratch-lesson-expansion" aria-expanded="false"><div class="row"><div class="col-md-11 col-xs-10"><div style="display: flex; padding: 0.5em 0px;"><div style="padding-right: 10px;"><img src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/course-module-icon.447f44f1.svg" alt=""></div><div style="display: flex; flex: 1 1 0%; flex-wrap: wrap; justify-content: space-between;"><h3 id="nameid-cc-CodingFromScratch-lesson-expansion" style="margin: 0px; font-size: 14px;">Coding From Scratch</h3><div class="cc-course-lesson-count courseLessonCount-0-2-51"><span class="completedLessons-0-2-52">11</span><span style="font-weight: 600; color: rgb(117, 117, 117);"> / </span><span>11</span><span class="sr-only">lessons completed</span></div></div></div></div><div class="col-md-1 col-xs-2"><span class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true" style="margin-top: 0px;"></span></div></div></li></div><button tabindex="0" id="idForNavTrapBottom" style="position: absolute; top: 92%; left: 90%;"><span class="fa fa-angle-double-up"></span></button></div><div class="container"><header><nav expand="lg" class="Component-root-0-2-13 navbar navbar-default navbar-fixed-top"><div class="container"><div id="navbar-header" class="navbar-header"><button type="button" class="pull-left navbar-toggle collapsed" style="margin: 8px 0px 8px 15px;"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="Component-logo-0-2-14" href="https://sci.exeterlms.com/dashboard"><img src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/sci-logo-white.96fbe320.png" alt="home" class="navbar-brand"></a><ul class="Component-mobileLessonMenuNav-0-2-15 pull-right nav navbar-nav"><li role="presentation" class="Component-lessonMenu-0-2-16"><a role="button" href="https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073#"><img src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/wozu-lesson-menu-icon.84c6d0c6.svg" class="cc-lesson-nav-menu" alt="lesson menu"></a></li></ul></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav navbar-right"><li role="presentation" class=""><a href="https://sci.exeterlms.com/dashboard">Dashboard</a></li><li role="presentation" class=""><a href="https://sci.exeterlms.com/profile">Profile</a></li><div class="cc-mobile-only" style="border-bottom: 1px solid rgb(231, 231, 231); height: 0px; margin: 10px 0px;"></div><li role="presentation" class="cc-mobile-only"><a role="button" href="https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073#">Get Help</a></li><li role="presentation" class="cc-mobile-only"><a role="button" href="https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073#">Enable High Contrast</a></li><li role="presentation" id="dropdown-notifications" class="dropdown dropdown-notifications "><a role="button" tabindex="0" class="cc-focus dropdown-toggle" aria-label="33 notifications are available to be reviewed" aria-expanded="false" style="padding-left: 1em; padding-right: 1.25em;"><span class="notification-icon notification-icon-unread glyphicon glyphicon-bell" data-count="33"></span></a><div id="dropdown-container" class="dropdown-container dropdown-position-bottomright"><div class="dropdown-toolbar"><span class="dropdown-toolbar-small-title">Notifications (33)</span><button class="n-button-0-2-36 n-button-d0-0-2-37" type="button" style="margin-right: 6px; margin-left: 6px;"><div role="status">Delete All</div></button><button class="n-button-0-2-36 n-button-d1-0-2-38" type="button"><div role="status">Mark All Read</div></button><button class="cc-button-reset cc-mobile-only" title="close"><span class="fa fa-fw fa-times  Component-icon-0-2-20 undefined" aria-hidden="true"></span></button></div><ul class="dropdown-menu"><div class="Component-root-0-2-21 panel panel-default"><div class="cc-notifications-list"><div class="cc-notification-list-content"><div class="Component-root-0-2-23"></div><ul style="margin: 0px; padding: 0px;"><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable cc-notification-item"><div class="row"><div class="col-md-12"><div class="cc-notification-item-header"><div class="cc-notification-item-header-subject truncate">Upcoming Release Scheduled</div><button class="cc-notification-item-header-delete fa fa-times fa-lg color red" tabindex="0" style="background: transparent; border: none; font-size: 13px;"></button></div><div class="truncate"><div>Exeter LMS will be offline Tuesday, May 11, 2024, by 8:00 PM AZ/MST for approximately one (1) hour while we deploy a new release. Please plan your activities accordingly.
+
+Thank you for your patience.
+</div></div><div class="cc-notification-item-meta"><small>May 16th</small><span role="status" aria-label="unread" class="badge unread">0</span><small class="pull-right"></small></div></div></div></li><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable cc-notification-item"><div class="row"><div class="col-md-12"><div class="cc-notification-item-header"><div class="cc-notification-item-header-subject truncate">Upcoming Release Scheduled</div><button class="cc-notification-item-header-delete fa fa-times fa-lg color red" tabindex="0" style="background: transparent; border: none; font-size: 13px;"></button></div><div class="truncate"><div>Exeter LMS will be offline Thursday, April 25, 2024, by 8:00 PM AZ/MST for approximately one (1) hour while we update application security certificates. Please plan your activities accordingly.
+
+Thank you for your patience.
+</div></div><div class="cc-notification-item-meta"><small>Apr 22nd</small><span role="status" aria-label="unread" class="badge unread">0</span><small class="pull-right"></small></div></div></div></li><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable cc-notification-item"><div class="row"><div class="col-md-12"><div class="cc-notification-item-header"><div class="cc-notification-item-header-subject truncate">Upcoming Release Scheduled</div><button class="cc-notification-item-header-delete fa fa-times fa-lg color red" tabindex="0" style="background: transparent; border: none; font-size: 13px;"></button></div><div class="truncate"><div>Exeter LMS will be offline Thursday, April 11, 2024, by 8:00 PM AZ/MST for approximately one (1) hour while we deploy a new release. Please plan your activities accordingly.
+
+Thank you for your patience.
+</div></div><div class="cc-notification-item-meta"><small>Apr 9th</small><span role="status" aria-label="unread" class="badge unread">0</span><small class="pull-right"></small></div></div></div></li><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable cc-notification-item"><div class="row"><div class="col-md-12"><div class="cc-notification-item-header"><div class="cc-notification-item-header-subject truncate">Upcoming Release Scheduled</div><button class="cc-notification-item-header-delete fa fa-times fa-lg color red" tabindex="0" style="background: transparent; border: none; font-size: 13px;"></button></div><div class="truncate"><div>Exeter LMS will be offline Tuesday, March 19, 2024, by 8:00 PM AZ/MST for approximately one (1) hour while we deploy a new release. Please plan your activities accordingly.
+
+Thank you for your patience.
+</div></div><div class="cc-notification-item-meta"><small>Mar 15th</small><span role="status" aria-label="unread" class="badge unread">0</span><small class="pull-right"></small></div></div></div></li><li role="button" tabindex="0" class="cc-focus list-group-item cc-panel-item cc-panel-item-clickable cc-notification-item"><div class="row"><div class="col-md-12"><div class="cc-notification-item-header"><div class="cc-notification-item-header-subject truncate">Upcoming Release Scheduled</div><button class="cc-notification-item-header-delete fa fa-times fa-lg color red" tabindex="0" style="background: transparent; border: none; font-size: 13px;"></button></div><div class="truncate"><div>Exeter LMS will be offline Tuesday, March 5, 2024, by 8:00 PM AZ/MST for approximately 1.5  hours while we deploy a new release. Please plan your activities accordingly.
+
+Thank you for your patience.
+</div></div><div class="cc-notification-item-meta"><small>Feb 29th</small><span role="status" aria-label="unread" class="badge unread">0</span><small class="pull-right"></small></div></div></div></li></ul></div></div><div class="panel-footer" style="background-color: rgb(248, 248, 248); border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;"><nav role="navigation" aria-label="Pagination Navigation" class="n-root-0-2-39 row cc-pager"><ul><li class="col-sm-4 col-xs-4"></li><li class="col-sm-4 col-xs-4 n-currentPage-0-2-41" aria-label="
+                page 1
+                
+              ">1 (of 7)</li><li class="col-sm-4 col-xs-4"><button class="cc-button-reset pull-right n-button-0-2-40" aria-label="next page"><span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></button></li></ul></nav></div></div></ul><div class="dropdown-footer text-center"></div></div></li><li role="presentation" class="cc-mobile-only"><a role="button" href="https://sci.exeterlms.com/student/42646/lesson/41283/topic/341073#">Logout</a></li><li role="presentation" id="dropdown-profile" class="cc-hide-on-mobile"><a role="button" tabindex="0" class="cc-focus n-toggle-0-2-28" id="dropdown-profile-element" aria-label="Profile menu closed" aria-haspopup="true" aria-controls="profile-dropdown-container" aria-expanded="false"><span class="n-usersName-0-2-30">Joel DeAlba</span><img src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/MiniImage_20201113100842417_XEU7V.jpg" alt="profile picture" class="cc-default-avatar img-circle" style="width: 30px;"></a><ul id="profile-dropdown-container" class="n-container-0-2-26" aria-hidden="true" role="menu" aria-labelledby="dropdown-profile-element"><li role="none"><a role="menuitem" tabindex="0" class="cc-focus n-dropdownItem-0-2-29" id="qa-dropdown-hight-contrast">Enable High Contrast</a></li><li role="none"><a role="menuitem" tabindex="0" class="cc-focus n-dropdownItem-0-2-29" id="qa-dropdown-logout">Logout</a></li></ul></li><button id="a11y-lesson-menu-toggle" class="cc-button-reset cc-hide-on-mobile Component-lessonMenu-0-2-16" aria-haspopup="true" aria-controls="a11y-lesson-menu" aria-expanded="false" aria-label="open courses"><img src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/wozu-lesson-menu-icon.84c6d0c6.svg" alt="toggle lesson menu"></button></ul></div></div></nav></header><div id="reach-skip-nav" data-reach-skip-nav-content=""></div><main id="app-content" class="row"><div class="row" style="min-height: 100%; margin-bottom: -2em;"><div><div class="col-md-12"><div class="col-md-10 col-md-offset-1" style="margin-bottom: 10px; padding-bottom: 1em;"><h1 style="text-align: center; border-bottom: 0.05em solid;">HTML Part 1</h1><div class="col-md-12 cc-topic-circle-navigation" style="padding-top: 1em;"><div style="display: flex; justify-content: space-between; align-items: center;"><div><button class="cc-button-reset Component-topicCircle-0-2-68 Component-topicCircleActive-0-2-69" role="link" aria-label="completed">1<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">2<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">3<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">4<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">5<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">6<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">7<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">8<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">9<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">10<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">11<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">12<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">13<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">14<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">15<span class="glyphicon glyphicon-ok-sign Component-activeIndicatorNew-0-2-76" aria-label="completed" z-index="1"></span><div class="Component-activityIndicator-0-2-71" aria-label="completed"></div></button></div><div><button class="cc-button-reset Component-topicCircle-0-2-68" role="link" aria-label="completed">16<span class="glyphicon glyphicon-ok-circle Component-activeIndicatorNew-0-2-76" aria-label="incompleted" z-index="1"></span></button></div></div></div></div></div><div><div class="cc-lesson-video-theatre-background" style="position: absolute; top: 207px; left: 0px; background: rgb(27, 30, 77); height: 545.625px; width: 100%;"></div><div id="cc-lesson-video-wrapper" class="col-md-10 col-md-offset-1"><iframe title="HTML Basics Video" src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/227466356.html" frameborder="0" allowfullscreen="" width="100%" style="height: 545.625px;" data-ready="true"></iframe></div></div><div class="col-md-12"><div class="col-md-10 col-md-offset-1"><h1>Overview</h1>
+<p>In its simplest definition, <code>HTML</code> is the language used to code the layout of a web page.</p>
+<p><strong>HTML</strong> stands for Hypertext Markup Language. It was created to mark up a text document that would be rendered by a browser. HTML tells the browser how to display the content. You will use HTML to mark up a document using tags that a browser then reads. It uses the markup to divide the document into different elements that it will then display.</p>
+<p>HTML allows for the text and or content of a document to be structured in a semantic manner. That is, rather than storing the document as a cluster of illegible data that only makes sense to the computer, a human can actually read and understand the HTML format. Think of HTML as building the framework of a document.</p>
+<p>It is important to distinguish that HTML is <em>not</em> used for the look of the page, but for the structure of its contents. The look of the page is the job of Cascading Style Sheets (<code>CSS</code>), which you will learn later on in Coding From Scratch.</p>
+<hr>
+<h2>HTML 5</h2>
+<p>The HTML standard is managed by the World Wide Web Consortium (W3C). This organization is responsible for managing any potential changes to the HTML standard. These changes keep HTML relevant to current technology and to how the web is used.</p>
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h3 class="panel-title">Additional Info!</h3>
+    </div>
+    <div class="panel-body">
+        <p>If you would like to read more about HTML, please visit: <a href="https://www.w3.org/" target="_blank">https://www.w3.org</a>.</p>
+    </div>
+</div>
+</div></div></div><div class="col-md-12" style="padding-top: 1em; padding-bottom: 1em;"><div class="col-md-10 col-md-offset-1"><div style="display: flex; justify-content: space-between; align-items: center;"><div><button class="n-button-0-2-36 n-button-d120-0-2-196" type="button" id="prevTopicBtn" style="visibility: hidden;"><div role="status"><span class="glyphicon glyphicon-menu-left"></span>Previous</div></button></div><div><button class="n-button-0-2-36 n-button-d163-0-2-239" type="button" id="nextTopicBtn" style="visibility: visible;"><div role="status">Next<span class="glyphicon glyphicon-menu-right"></span></div></button></div></div></div></div><div class="chat-bot closed" style="z-index: 1000;"><button class="chat-bot-open-bubble"><i class="fa fa-commenting"></i></button></div></div></main></div><div class="Component-root-0-2-34 cc-hide-on-print"><button class="cc-button-reset cc-focus Component-button-0-2-35">Get Help</button></div></div></div><script type="text/javascript">!function(){var n=window.navigator.userAgent;if(n.indexOf("MSIE ")>=0||n.indexOf("Trident/")>=0||n.indexOf("Edge/")>=0)window.location.assign("/unsupported.html")}()</script><script>!function(e){function t(t){for(var n,c,o=t[0],d=t[1],u=t[2],i=0,s=[];i<o.length;i++)c=o[i],Object.prototype.hasOwnProperty.call(a,c)&&a[c]&&s.push(a[c][0]),a[c]=0;for(n in d)Object.prototype.hasOwnProperty.call(d,n)&&(e[n]=d[n]);for(l&&l(t);s.length;)s.shift()();return f.push.apply(f,u||[]),r()}function r(){for(var e,t=0;t<f.length;t++){for(var r=f[t],n=!0,c=1;c<r.length;c++){var d=r[c];0!==a[d]&&(n=!1)}n&&(f.splice(t--,1),e=o(o.s=r[0]))}return e}var n={},c={10:0},a={10:0},f=[];function o(t){if(n[t])return n[t].exports;var r=n[t]={i:t,l:!1,exports:{}};return e[t].call(r.exports,r,r.exports,o),r.l=!0,r.exports}o.e=function(e){var t=[];c[e]?t.push(c[e]):0!==c[e]&&{0:1,3:1,5:1,6:1,8:1,11:1,13:1,14:1,15:1,17:1,18:1,19:1,20:1,21:1,22:1,23:1,24:1,25:1,26:1,27:1,28:1,29:1}[e]&&t.push(c[e]=new Promise((function(t,r){for(var n="static/css/"+({}[e]||e)+"."+{0:"fe1bc24a",1:"31d6cfe0",2:"31d6cfe0",3:"7e05e90f",4:"31d6cfe0",5:"3401935b",6:"77968817",7:"31d6cfe0",8:"892108fa",11:"33767987",12:"31d6cfe0",13:"8d0cdf87",14:"be7b7545",15:"a5d6a5f8",17:"892108fa",18:"26bb881e",19:"c0e68325",20:"c8b53289",21:"9048df3a",22:"3fc44709",23:"9f5a579a",24:"0b08e41b",25:"acd153b0",26:"c0e68325",27:"97ca600c",28:"1bfc580c",29:"cf13715e",30:"31d6cfe0",31:"31d6cfe0",32:"31d6cfe0",33:"31d6cfe0",34:"31d6cfe0",35:"31d6cfe0",36:"31d6cfe0",37:"31d6cfe0",38:"31d6cfe0",39:"31d6cfe0",40:"31d6cfe0",41:"31d6cfe0",42:"31d6cfe0",43:"31d6cfe0",44:"31d6cfe0",45:"31d6cfe0",46:"31d6cfe0",47:"31d6cfe0"}[e]+".chunk.css",a=o.p+n,f=document.getElementsByTagName("link"),d=0;d<f.length;d++){var u=(l=f[d]).getAttribute("data-href")||l.getAttribute("href");if("stylesheet"===l.rel&&(u===n||u===a))return t()}var i=document.getElementsByTagName("style");for(d=0;d<i.length;d++){var l;if((u=(l=i[d]).getAttribute("data-href"))===n||u===a)return t()}var s=document.createElement("link");s.rel="stylesheet",s.type="text/css",s.onload=t,s.onerror=function(t){var n=t&&t.target&&t.target.src||a,f=new Error("Loading CSS chunk "+e+" failed.\n("+n+")");f.code="CSS_CHUNK_LOAD_FAILED",f.request=n,delete c[e],s.parentNode.removeChild(s),r(f)},s.href=a,document.getElementsByTagName("head")[0].appendChild(s)})).then((function(){c[e]=0})));var r=a[e];if(0!==r)if(r)t.push(r[2]);else{var n=new Promise((function(t,n){r=a[e]=[t,n]}));t.push(r[2]=n);var f,d=document.createElement("script");d.charset="utf-8",d.timeout=120,o.nc&&d.setAttribute("nonce",o.nc),d.src=function(e){return o.p+"static/js/"+({}[e]||e)+"."+{0:"ecec0993",1:"c1b4a2ed",2:"45f4f30f",3:"85ce8007",4:"1431eb25",5:"c005df20",6:"7d1d0ae2",7:"70b748d6",8:"4e0d71c5",11:"92b1ff7a",12:"48019248",13:"5e7421b2",14:"90dc26ad",15:"0eea1876",17:"87ca5d53",18:"3c8c83c4",19:"5be70865",20:"39096794",21:"4af252e7",22:"41ac4ebb",23:"26aac26e",24:"250e452e",25:"bd34d916",26:"46774383",27:"6ff09f99",28:"6f553581",29:"34b2ab36",30:"ddd164dc",31:"fde40f96",32:"a5933b07",33:"ca848e95",34:"ba85d026",35:"197eedb3",36:"0af7c424",37:"4dc06645",38:"44d66faa",39:"dedb4b76",40:"173152e7",41:"946dc02c",42:"71080f23",43:"b6eec41e",44:"2295cb90",45:"f849d45a",46:"98652f5f",47:"519cd5bb"}[e]+".chunk.js"}(e);var u=new Error;f=function(t){d.onerror=d.onload=null,clearTimeout(i);var r=a[e];if(0!==r){if(r){var n=t&&("load"===t.type?"missing":t.type),c=t&&t.target&&t.target.src;u.message="Loading chunk "+e+" failed.\n("+n+": "+c+")",u.name="ChunkLoadError",u.type=n,u.request=c,r[1](u)}a[e]=void 0}};var i=setTimeout((function(){f({type:"timeout",target:d})}),12e4);d.onerror=d.onload=f,document.head.appendChild(d)}return Promise.all(t)},o.m=e,o.c=n,o.d=function(e,t,r){o.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},o.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},o.t=function(e,t){if(1&t&&(e=o(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(o.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var n in e)o.d(r,n,function(t){return e[t]}.bind(null,n));return r},o.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return o.d(t,"a",t),t},o.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},o.p="/",o.oe=function(e){throw console.error(e),e};var d=this["webpackJsonpCC.LMS.WebUI"]=this["webpackJsonpCC.LMS.WebUI"]||[],u=d.push.bind(d);d.push=t,d=d.slice();for(var i=0;i<d.length;i++)t(d[i]);var l=u;r()}([])</script><script src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/16.6dad8fa8.chunk.js.download"></script><script src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/main.21806e78.chunk.js.download"></script><div id="viewPortSize" class="bottom_right" style="display: none; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); font-size: 36px;"></div><iframe src="./1. Overview - HTML Part 1 - sci - Exeter LMS_files/checksession.html" style="visibility: hidden; position: absolute; display: none; width: 0px; height: 0px;"></iframe><span style="border-radius:10px !important;text-indent:12px !important;width:auto !important;height:20px !important;padding:0px 8px !important;text-align:center !important;vertical-align:middle !important;font:bold 11px / 20px &quot;Helvetica Neue&quot;, Helvetica, sans-serif !important;color:rgb(255, 255, 255) !important;background:url(&quot;data:image/svg+xml;base64,PHN2ZyBpZD0ic291cmNlIiB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iNiIgY3k9IjYiIHI9IjYiIGZpbGw9IiNFNjAwMjMiPjwvY2lyY2xlPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNkMwIDguNTYxNSAxLjYwNTUgMTAuNzQ4NSAzLjg2NSAxMS42MDlDMy44MSAxMS4xNDA1IDMuNzUxNSAxMC4zNjggMy44Nzc1IDkuODI2QzMuOTg2IDkuMzYgNC41NzggNi44NTcgNC41NzggNi44NTdDNC41NzggNi44NTcgNC4zOTk1IDYuNDk5NSA0LjM5OTUgNS45N0M0LjM5OTUgNS4xNCA0Ljg4MDUgNC41MiA1LjQ4IDQuNTJDNS45OSA0LjUyIDYuMjM2IDQuOTAyNSA2LjIzNiA1LjM2MUM2LjIzNiA1Ljg3MzUgNS45MDk1IDYuNjM5NSA1Ljc0MSA3LjM1QzUuNjAwNSA3Ljk0NDUgNi4wMzk1IDguNDI5NSA2LjYyNTUgOC40Mjk1QzcuNjg3IDguNDI5NSA4LjUwMzUgNy4zMSA4LjUwMzUgNS42OTRDOC41MDM1IDQuMjYzNSA3LjQ3NTUgMy4yNjQgNi4wMDggMy4yNjRDNC4zMDkgMy4yNjQgMy4zMTE1IDQuNTM4NSAzLjMxMTUgNS44NTZDMy4zMTE1IDYuMzY5NSAzLjUwOSA2LjkxOTUgMy43NTYgNy4yMTlDMy44MDQ1IDcuMjc4NSAzLjgxMiA3LjMzIDMuNzk3NSA3LjM5MDVDMy43NTIgNy41Nzk1IDMuNjUxIDcuOTg1IDMuNjMxNSA4LjA2OEMzLjYwNSA4LjE3NyAzLjU0NSA4LjIwMDUgMy40MzE1IDguMTQ3NUMyLjY4NTUgNy44MDA1IDIuMjE5NSA2LjcxIDIuMjE5NSA1LjgzNEMyLjIxOTUgMy45NDk1IDMuNTg4IDIuMjE5NSA2LjE2NTUgMi4yMTk1QzguMjM3NSAyLjIxOTUgOS44NDggMy42OTYgOS44NDggNS42NjlDOS44NDggNy43Mjc1IDguNTUwNSA5LjM4NDUgNi43NDg1IDkuMzg0NUM2LjE0MyA5LjM4NDUgNS41NzQ1IDkuMDY5NSA1LjM3OTUgOC42OThDNS4zNzk1IDguNjk4IDUuMDggOS44MzkgNS4wMDc1IDEwLjExOEM0Ljg2NjUgMTAuNjYgNC40NzU1IDExLjM0NiA0LjIzMyAxMS43MzU1QzQuNzkyIDExLjkwNzUgNS4zODUgMTIgNiAxMkM5LjMxMzUgMTIgMTIgOS4zMTM1IDEyIDZDMTIgMi42ODY1IDkuMzEzNSAwIDYgMEMyLjY4NjUgMCAwIDIuNjg2NSAwIDZaIiBmaWxsPSJ3aGl0ZSI+PC9wYXRoPgo8L3N2Zz4=&quot;) 4px 50% / 12px 12px no-repeat rgb(230, 0, 35) !important;position:absolute !important;opacity:1 !important;z-index:9007199254740990 !important;display:none !important;cursor:pointer !important;border:none !important;-webkit-font-smoothing:antialiased !important;top:0 !important;left:0 !important;display:none !important;top:1181px !important;left:373px !important">Save</span></body></html>
